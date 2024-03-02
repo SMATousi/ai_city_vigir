@@ -10,8 +10,8 @@ python tools/run_net_multi_node.py \
   --init_method tcp://localhost:10225 \
   --cfg $CURRENT_DIR/config.yaml \
   --num_shards $NUM_SHARDS \
-  DATA.PATH_TO_DATA_DIR /data/Disk_D/AI_city_track3/A1_cut_video_new\
-  DATA.PATH_PREFIX /data/Disk_D/AI_city_track3/A1_cut_video_new \
+  DATA.PATH_TO_DATA_DIR /root/home/data\
+  DATA.PATH_PREFIX /root/home/data \
   TRAIN.EVAL_PERIOD 1 \
   TRAIN.CHECKPOINT_PERIOD 1 \
   TRAIN.BATCH_SIZE $BATCH_SIZE \
