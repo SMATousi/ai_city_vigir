@@ -24,20 +24,20 @@ from slowfast.utils.meters import AVAMeter, EpochTimer, TrainMeter, ValMeter
 from slowfast.utils.multigrid import MultigridSchedule
 
 # Ali Eddited:
-import wandb
+# import wandb
 
-wandb.init(
-            # set the wandb project where this run will be logged
-        project="AI_City_Track_3"
+# wandb.init(
+#             # set the wandb project where this run will be logged
+#         project="AI_City_Track_3"
             
-            # track hyperparameters and run metadata
-            # config={
-            # "learning_rate": 0.02,
-            # "architecture": "CNN",
-            # "dataset": "CIFAR-100",
-            # "epochs": 20,
-            # }
-    )
+#             # track hyperparameters and run metadata
+#             # config={
+#             # "learning_rate": 0.02,
+#             # "architecture": "CNN",
+#             # "dataset": "CIFAR-100",
+#             # "epochs": 20,
+#             # }
+#     )
 
 logger = logging.get_logger(__name__)
 
@@ -199,7 +199,7 @@ def train_epoch(
 
     # Log epoch stats.
     train_meter.log_epoch_stats(cur_epoch)
-    wandb.log(train_meters)
+    # wandb.log(train_meters)
     train_meter.reset()
 
 
